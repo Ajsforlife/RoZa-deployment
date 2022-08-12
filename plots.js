@@ -25,7 +25,7 @@ function buildMetadata(sample) {
     var PANEL = d3.select("#sample-metadata");
     PANEL.html("");
     Object.entries(result).forEach(([key, value]) => {
-      let h6 = PANEL.append("h6").text(`${key}: ${value}`);})
+      let h6 = PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);})
       
     //result.forEach(([key,value])=> {console.log(key,value)})
 
