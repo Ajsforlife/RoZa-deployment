@@ -9,12 +9,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<body>
+<body style="background-color: cadetblue">
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
+        <div class="p-5 text-center bg-image" style="
+        background-image: url('https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/21/15/istock-495624342.jpg?quality=75&width=990&auto=webp&crop=982:726,smart');
+        height: 400px;
+      ">
         <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+        <p>Use the interactive charts below to explore the dataset. <br><br>
+          This webpage shows which cultures are found in each subjects belly button and shows how frequently that person scrubs their belly button per week. There are 3 charts a bar graph(which shows top 10 cultures found per person) a gauge chart (which shows how frequently the person srubbed) and a bubble chart (shows every culture and their occuarance found).
+        </p>
       </div>
     </div>
     <div class="row">
@@ -28,26 +34,30 @@
             <h3 class="panel-title">Demographic Info</h3>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
+          <div id="sample-samples" class="panel-body"></div>
         </div>
       </div>
       <div class="col-md-5">
-        <div id="bar"></div>
+          <div id="bar-plot"></div>
+          <script src="charts.js"></script>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
+        <script src="charts.js"></script>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <script src="charts.js"></script>
       </div>
     </div>
   </div>
 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="plots.js"></script>
+  <script src="/js/charts.js"></script>
 
 </body>
-
 </html>
